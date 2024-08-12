@@ -1,13 +1,17 @@
-import Link from "next/link"
+"use client"
+import { useState } from "react"
+import MenuList from "./MenuList";
 
 const Menu = () => {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => {setOpen(true)};
+    const handleClose = () => {setOpen(false)};
+
     return (
-        <nav className="container text-center p-1">
-            <Link href={"/nosotros"}>Nosotros</Link>
-            <Link href={"/catalogo"}>Catálogo</Link>
-            <Link href={"/carrito"}>Carrito</Link>
-            <Link href={"/admin"}>Admin</Link>
-        </nav>
+        <div>
+            <div onClick={handleOpen}>[ Menú ]</div>
+            <MenuList open={open} handleClose={handleClose} />
+        </div>
     )
 }
 

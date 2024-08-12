@@ -1,3 +1,6 @@
+import ProductList from "./components/ProductList";
+import productos from "@/app/data/productos.json";
+
 export const metadata = {
   title: "Adidas Argentina",
   description: "Página de Adidas Argentina (Next.js)",
@@ -5,8 +8,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
-      <p>Contenido página principal</p>
-    </div>
+    <ProductList data={productos} category={"all"} />
   )
 }
