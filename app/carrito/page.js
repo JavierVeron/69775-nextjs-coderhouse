@@ -2,6 +2,11 @@
 import { useRouter } from "next/navigation";
 import Boton from "../components/Boton";
 
+export const metadata = {
+    title: "Carrito - Adidas Argentina",
+    description: "Página de Carrito. Curso de Next.js en Coderhouse",
+};
+
 const Carrito = () => {
     const router = useRouter();
 

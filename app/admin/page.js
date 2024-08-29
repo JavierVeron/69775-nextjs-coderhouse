@@ -2,6 +2,11 @@
 import { useRouter } from "next/navigation";
 import Boton from "../components/Boton";
 
+export const metadata = {
+    title: "Administración - Adidas Argentina",
+    description: "Página de Administración. Curso de Next.js en Coderhouse",
+};
+
 const Admin = () => {
     const router = useRouter();
 

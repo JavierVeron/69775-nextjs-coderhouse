@@ -2,6 +2,11 @@
 import { useRouter } from "next/navigation";
 import Boton from "../components/Boton";
 
+export const metadata = {
+    title: "Nosotros - Adidas Argentina",
+    description: "Página de Nosotros. Curso de Next.js en Coderhouse",
+};
+
 const Nosotros = () => {
     const router = useRouter();
 
